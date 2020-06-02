@@ -77,9 +77,29 @@ public class ArrayListTest {
         return null;
     }
 
+    /**
+     * ArrayList缩容实验
+     *
+     * @see ArrayList#trimToSize()
+     */
+    private static void trimToSizeTest() {
+
+        ArrayList<Object> arrayList = new ArrayList<>(10);
+        for (int i = 0; i < 3; i++) {
+            arrayList.add(new Object());
+        }
+        Object[] oldElems = getAccessibleElementDataInArrayList(arrayList);
+        System.out.println(String.format("原来的数组长度是：%s",oldElems.length));
+        arrayList.trimToSize();
+        Object[] newElems = getAccessibleElementDataInArrayList(arrayList);
+        System.out.println(String.format("现在的数组长度是：%s",newElems.length));
+        System.out.println(String.format("两个数组[%s]同一个数组",oldElems==newElems?"是":"不是"));
+    }
+
     public static void main(String[] args) {
-        compareArrayListWithConstrParam();
-        whenToGrowCap();
+//        compareArrayListWithConstrParam();
+//        whenToGrowCap();
+        trimToSizeTest();
     }
 
 }

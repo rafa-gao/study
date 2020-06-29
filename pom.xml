@@ -8,5 +8,16 @@
     <artifactId>study</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <spring-boot-starter>2.1.7.RELEASE</spring-boot-starter>
+    </properties>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot-starter}</version>
+        </dependency>
+    </dependencies>
 </project>

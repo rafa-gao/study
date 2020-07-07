@@ -4,8 +4,6 @@ package single;
  * 通过内部内来实现了懒加载
  * @author rafa gao
  */
-
-
 public class SingleWithFinalAndInner {
 
     private SingleWithFinalAndInner() {

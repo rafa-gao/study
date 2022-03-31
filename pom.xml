@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <spring-boot-starter>2.1.7.RELEASE</spring-boot-starter>
+        <spring-boot-starter>2.5.12</spring-boot-starter>
     </properties>
 
 
